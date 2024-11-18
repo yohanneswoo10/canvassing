@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 10:58:41.248383",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detail_item_section",
+  "item",
+  "item_name",
+  "column_break_stnd",
+  "brand",
+  "item_group",
+  "section_break_xhjp",
+  "quantity",
+  "uom",
+  "column_break_dypv",
+  "second_qty",
+  "second_uom",
+  "stock_avalibility_section",
+  "stock_list",
+  "section_break_qqjf",
+  "ranah",
+  "column_break_hvdj",
+  "bypass",
+  "section_break_iwjk",
+  "qty_terjual",
+  "column_break_aakb",
+  "qty_sisa"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_stnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.brand",
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fetch_from": "item.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group"
+  },
+  {
+   "fieldname": "section_break_xhjp",
+   "fieldtype": "Section Break",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_dypv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_qty",
+   "fieldtype": "Float",
+   "label": "Second Qty"
+  },
+  {
+   "fieldname": "second_uom",
+   "fieldtype": "Data",
+   "label": "Second UOM"
+  },
+  {
+   "fieldname": "stock_avalibility_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Avalibility"
+  },
+  {
+   "fieldname": "stock_list",
+   "fieldtype": "HTML",
+   "label": "Stock List"
+  },
+  {
+   "fieldname": "qty_terjual",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Terjual"
+  },
+  {
+   "fieldname": "column_break_aakb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty_sisa",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Sisa"
+  },
+  {
+   "fieldname": "section_break_qqjf",
+   "fieldtype": "Section Break",
+   "label": "Stock"
+  },
+  {
+   "fieldname": "ranah",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ranah"
+  },
+  {
+   "fieldname": "bypass",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ByPass"
+  },
+  {
+   "fieldname": "detail_item_section",
+   "fieldtype": "Section Break",
+   "label": "Detail Item"
+  },
+  {
+   "fieldname": "section_break_iwjk",
+   "fieldtype": "Section Break",
+   "label": "Stock Calculation"
+  },
+  {
+   "fieldname": "column_break_hvdj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 15:19:57.815584",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "BPPB Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

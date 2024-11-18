@@ -1,0 +1,418 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-12 08:47:06.823089",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_klaw",
+  "item",
+  "item_name",
+  "quantity",
+  "column_break_jlkt",
+  "item_group",
+  "brand",
+  "uom",
+  "item_detail_section",
+  "no_seri",
+  "no_dot",
+  "otd_mm",
+  "_remaining_nsd",
+  "column_break_lpcl",
+  "nsd_left_mm",
+  "nsd_center_mm",
+  "nsd_right_mm",
+  "supplier_information_section",
+  "supplier",
+  "column_break_thnr",
+  "supplier_name",
+  "image_section",
+  "image_full_tire",
+  "img_full_tire",
+  "column_break_qevl",
+  "tire_thread",
+  "image_tire_tread",
+  "column_break_nvmi",
+  "image_no_seri",
+  "img_no_seri",
+  "column_break_byuo",
+  "image_no_dot",
+  "img_no_dot",
+  "nsd_image_section",
+  "img_nsd_left",
+  "nsd_left",
+  "column_break_aaln",
+  "img_nsd_center",
+  "nsd_center",
+  "column_break_vttr",
+  "img_nsd_right",
+  "nsd_right",
+  "issue_image_section",
+  "img_issue_1",
+  "issue_1",
+  "column_break_ggkj",
+  "img_issue_2",
+  "issue_2",
+  "column_break_thzy",
+  "img_issue_3",
+  "issue_3",
+  "status_section",
+  "internal_status",
+  "date_sent_to_supplier",
+  "no_surat_jalan",
+  "result",
+  "column_break_mtnh",
+  "customer_status",
+  "replacement_status",
+  "replacement_price",
+  "date_replacement_to_customer",
+  "reason_section",
+  "reject_reason_from_supplier",
+  "keterangan_section",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_klaw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_jlkt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "item_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Item Detail"
+  },
+  {
+   "fieldname": "no_seri",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Seri"
+  },
+  {
+   "fieldname": "no_dot",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No DOT"
+  },
+  {
+   "fieldname": "otd_mm",
+   "fieldtype": "Float",
+   "label": "OTD (mm)"
+  },
+  {
+   "fieldname": "_remaining_nsd",
+   "fieldtype": "Float",
+   "label": "% Remaining NSD"
+  },
+  {
+   "fieldname": "column_break_lpcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nsd_left_mm",
+   "fieldtype": "Float",
+   "label": "NSD Left (mm)"
+  },
+  {
+   "fieldname": "nsd_center_mm",
+   "fieldtype": "Float",
+   "label": "NSD Center (mm)"
+  },
+  {
+   "fieldname": "nsd_right_mm",
+   "fieldtype": "Float",
+   "label": "NSD Right (mm)"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_thnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "supplier_information_section",
+   "fieldtype": "Section Break",
+   "label": "Supplier Information"
+  },
+  {
+   "fieldname": "image_section",
+   "fieldtype": "Section Break",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_full_tire",
+   "fieldtype": "Attach Image",
+   "label": "Image Full Tire"
+  },
+  {
+   "fieldname": "img_full_tire",
+   "fieldtype": "Image",
+   "label": "Img Full Tire",
+   "options": "image_full_tire"
+  },
+  {
+   "fieldname": "column_break_qevl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_no_dot",
+   "fieldtype": "Attach Image",
+   "label": "Image No DOT"
+  },
+  {
+   "fieldname": "img_no_dot",
+   "fieldtype": "Image",
+   "label": "Img No DOT",
+   "options": "image_no_dot"
+  },
+  {
+   "fieldname": "tire_thread",
+   "fieldtype": "Attach Image",
+   "label": "Tire Thread"
+  },
+  {
+   "fieldname": "image_tire_tread",
+   "fieldtype": "Image",
+   "label": "Image Tire Tread",
+   "options": "tire_thread"
+  },
+  {
+   "fieldname": "column_break_nvmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_no_seri",
+   "fieldtype": "Attach Image",
+   "label": "Image No Seri"
+  },
+  {
+   "fieldname": "img_no_seri",
+   "fieldtype": "Image",
+   "label": "Img No Seri",
+   "options": "image_no_seri"
+  },
+  {
+   "fieldname": "column_break_byuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nsd_image_section",
+   "fieldtype": "Section Break",
+   "label": "NSD Image"
+  },
+  {
+   "fieldname": "img_nsd_left",
+   "fieldtype": "Attach Image",
+   "label": "IMG NSD Left"
+  },
+  {
+   "fieldname": "nsd_left",
+   "fieldtype": "Image",
+   "label": "NSD Left"
+  },
+  {
+   "fieldname": "column_break_aaln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_nsd_center",
+   "fieldtype": "Attach Image",
+   "label": "IMG NSD Center"
+  },
+  {
+   "fieldname": "nsd_center",
+   "fieldtype": "Image",
+   "label": "NSD Center"
+  },
+  {
+   "fieldname": "column_break_vttr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_nsd_right",
+   "fieldtype": "Attach Image",
+   "label": "IMG NSD Right"
+  },
+  {
+   "fieldname": "nsd_right",
+   "fieldtype": "Image",
+   "label": "NSD Right"
+  },
+  {
+   "fieldname": "issue_image_section",
+   "fieldtype": "Section Break",
+   "label": "Issue Image"
+  },
+  {
+   "fieldname": "img_issue_1",
+   "fieldtype": "Attach Image",
+   "label": "IMG Issue 1"
+  },
+  {
+   "fieldname": "issue_1",
+   "fieldtype": "Image",
+   "label": "Issue 1"
+  },
+  {
+   "fieldname": "column_break_ggkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_issue_2",
+   "fieldtype": "Attach Image",
+   "label": "IMG Issue 2"
+  },
+  {
+   "fieldname": "issue_2",
+   "fieldtype": "Image",
+   "label": "Issue 2"
+  },
+  {
+   "fieldname": "column_break_thzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "img_issue_3",
+   "fieldtype": "Attach Image",
+   "label": "IMG Issue 3"
+  },
+  {
+   "fieldname": "issue_3",
+   "fieldtype": "Image",
+   "label": "Issue 3"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "internal_status",
+   "fieldtype": "Select",
+   "label": "Internal Status",
+   "options": "Received\nSent To Supplier\nResult From Supplier"
+  },
+  {
+   "fieldname": "date_sent_to_supplier",
+   "fieldtype": "Date",
+   "label": "Date Sent To Supplier"
+  },
+  {
+   "fieldname": "customer_status",
+   "fieldtype": "Select",
+   "label": "Customer Status",
+   "options": "Belum Diganti\nSudah Diganti"
+  },
+  {
+   "fieldname": "column_break_mtnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nAccepted\nRejected\nSupport"
+  },
+  {
+   "fieldname": "replacement_status",
+   "fieldtype": "Select",
+   "label": "Replacement Status",
+   "options": "\nGoods\nMoney"
+  },
+  {
+   "fieldname": "replacement_price",
+   "fieldtype": "Currency",
+   "label": "Replacement Price"
+  },
+  {
+   "fieldname": "reason_section",
+   "fieldtype": "Section Break",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "reject_reason_from_supplier",
+   "fieldtype": "Long Text",
+   "label": "Reject Reason From Supplier"
+  },
+  {
+   "fieldname": "keterangan_section",
+   "fieldtype": "Section Break",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Long Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "date_replacement_to_customer",
+   "fieldtype": "Date",
+   "label": "Date Replacement to Customer"
+  },
+  {
+   "fieldname": "no_surat_jalan",
+   "fieldtype": "Data",
+   "label": "No Surat Jalan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-12 09:42:49.991870",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "Claim Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

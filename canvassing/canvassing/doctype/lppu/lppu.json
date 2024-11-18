@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-15 09:52:13.834734",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ojsa",
+  "title",
+  "naming_series",
+  "salesman",
+  "kendaraan",
+  "driver",
+  "column_break_dbvb",
+  "tanggal_jalan",
+  "tanggal_kembali",
+  "rute",
+  "driver_name",
+  "from_bppb",
+  "section_break_ewuj",
+  "get_data",
+  "item_tab",
+  "lppu_item_section",
+  "lppu_item",
+  "sales_order_tab",
+  "sales_order_detail_section",
+  "sales_order_detail",
+  "total_tab",
+  "total_section",
+  "total_qty",
+  "total_penjualan_cash",
+  "total_penjualan_credit",
+  "total_harga",
+  "column_break_qcky",
+  "total_harga_price_list",
+  "total_diskon_barang",
+  "total_diskon_tambahan",
+  "total_diskon",
+  "section_break_flqy",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ojsa",
+   "fieldtype": "Section Break",
+   "label": "LPPU Detail"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "salesman",
+   "fieldtype": "Link",
+   "label": "Salesman",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "kendaraan",
+   "fieldtype": "Link",
+   "label": "Kendaraan",
+   "options": "Mobil"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "column_break_dbvb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal_jalan",
+   "fieldtype": "Date",
+   "label": "Tanggal Jalan"
+  },
+  {
+   "fieldname": "tanggal_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal Kembali"
+  },
+  {
+   "fieldname": "rute",
+   "fieldtype": "Link",
+   "label": "Rute",
+   "options": "Rute"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name",
+   "options": "driver.full_name"
+  },
+  {
+   "fieldname": "from_bppb",
+   "fieldtype": "Link",
+   "label": "From BPPB",
+   "options": "BPPB"
+  },
+  {
+   "fieldname": "item_tab",
+   "fieldtype": "Tab Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "lppu_item_section",
+   "fieldtype": "Section Break",
+   "label": "LPPU ITEM"
+  },
+  {
+   "fieldname": "lppu_item",
+   "fieldtype": "Table",
+   "label": "LPPU ITEM",
+   "options": "FORM LPPU ITEM"
+  },
+  {
+   "fieldname": "sales_order_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Order Detail"
+  },
+  {
+   "fieldname": "sales_order_detail",
+   "fieldtype": "Table",
+   "label": "Sales Order Detail",
+   "options": "FORM LPPU DETAIL"
+  },
+  {
+   "fieldname": "total_tab",
+   "fieldtype": "Tab Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Data",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "total_penjualan_cash",
+   "fieldtype": "Currency",
+   "label": "Total Penjualan Cash"
+  },
+  {
+   "fieldname": "total_penjualan_credit",
+   "fieldtype": "Currency",
+   "label": "Total Penjualan Credit"
+  },
+  {
+   "fieldname": "total_harga",
+   "fieldtype": "Currency",
+   "label": "Total Harga"
+  },
+  {
+   "fieldname": "column_break_qcky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_harga_price_list",
+   "fieldtype": "Currency",
+   "label": "Total Harga Price List"
+  },
+  {
+   "fieldname": "total_diskon_barang",
+   "fieldtype": "Currency",
+   "label": "Total DIskon Barang"
+  },
+  {
+   "fieldname": "total_diskon_tambahan",
+   "fieldtype": "Currency",
+   "label": "Total Diskon Tambahan"
+  },
+  {
+   "fieldname": "total_diskon",
+   "fieldtype": "Currency",
+   "label": "Total Diskon"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "LPPU",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_flqy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ewuj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-15 10:08:12.472525",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "LPPU",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-11 10:32:57.433489",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "tanggal_berangkat",
+  "tanggal_kembali",
+  "column_break_dqoz",
+  "no_pol_kendaraan",
+  "driver",
+  "driver_name",
+  "section_break_bjoz",
+  "nama_sales",
+  "rute",
+  "kendaraan",
+  "tab_2_tab",
+  "refresh_stock",
+  "column_break_wmdg",
+  "calculate_qty",
+  "items_section",
+  "item",
+  "others_tab",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "tanggal_berangkat",
+   "fieldtype": "Date",
+   "label": "Tanggal Berangkat"
+  },
+  {
+   "fieldname": "tanggal_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal Kembali"
+  },
+  {
+   "fieldname": "column_break_dqoz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_pol_kendaraan",
+   "fieldtype": "Data",
+   "label": "No Pol Kendaraan"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fetch_from": "driver.full_name",
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BPPB",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_bjoz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nama_sales",
+   "fieldtype": "Link",
+   "label": "Nama Sales",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "rute",
+   "fieldtype": "Link",
+   "label": "Rute",
+   "options": "Rute"
+  },
+  {
+   "fieldname": "kendaraan",
+   "fieldtype": "Link",
+   "label": "Kendaraan",
+   "options": "Mobil"
+  },
+  {
+   "fieldname": "refresh_stock",
+   "fieldtype": "Button",
+   "label": "Refresh Stock"
+  },
+  {
+   "fieldname": "column_break_wmdg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculate_qty",
+   "fieldtype": "Button",
+   "label": "Calculate Qty"
+  },
+  {
+   "fieldname": "others_tab",
+   "fieldtype": "Tab Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "BPPB Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-11 11:21:52.974170",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "BPPB",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

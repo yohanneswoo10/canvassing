@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-11 14:56:37.620915",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "tanggal",
+  "column_break_skmh",
+  "lokasi",
+  "penerima",
+  "section_break_xjdk",
+  "total_faktur",
+  "total_nilai_faktur",
+  "column_break_eqyk",
+  "total_outstanding_faktur",
+  "invoices_tab",
+  "invoices_list_column",
+  "dtft_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal"
+  },
+  {
+   "fieldname": "column_break_skmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lokasi",
+   "fieldtype": "Data",
+   "label": "Lokasi"
+  },
+  {
+   "fieldname": "penerima",
+   "fieldtype": "Link",
+   "label": "Penerima",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "section_break_xjdk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_faktur",
+   "fieldtype": "Int",
+   "label": "Total Faktur"
+  },
+  {
+   "fieldname": "total_nilai_faktur",
+   "fieldtype": "Currency",
+   "label": "Total Nilai Faktur"
+  },
+  {
+   "fieldname": "column_break_eqyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_outstanding_faktur",
+   "fieldtype": "Currency",
+   "label": "Total Outstanding Faktur"
+  },
+  {
+   "fieldname": "invoices_tab",
+   "fieldtype": "Tab Break",
+   "label": "Invoices"
+  },
+  {
+   "fieldname": "invoices_list_column",
+   "fieldtype": "Column Break",
+   "label": "Invoices List"
+  },
+  {
+   "fieldname": "dtft_detail",
+   "fieldtype": "Table",
+   "label": "DTFT Detail",
+   "options": "DTFT Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-11 15:16:47.150424",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "DTFT",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

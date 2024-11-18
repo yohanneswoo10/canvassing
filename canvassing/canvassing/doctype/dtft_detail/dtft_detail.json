@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 15:03:37.746415",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tagihan_section",
+  "invoice_no",
+  "invoice_date",
+  "customer_code",
+  "customer_name",
+  "column_break_vvgg",
+  "tanggal_jatuh_tempo",
+  "total_faktur",
+  "paid_amount",
+  "outstanding_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "tagihan_section",
+   "fieldtype": "Section Break",
+   "label": "Tagihan"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Invoice No",
+   "options": "Sales Invoice"
+  },
+  {
+   "fetch_from": "invoice_no.posting_date",
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date"
+  },
+  {
+   "fetch_from": "invoice_no.customer",
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fetch_from": "invoice_no.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_vvgg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "invoice_no.due_date",
+   "fieldname": "tanggal_jatuh_tempo",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal Jatuh Tempo"
+  },
+  {
+   "fieldname": "total_faktur",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Faktur"
+  },
+  {
+   "fetch_from": "invoice_no.outstanding_amount",
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outstanding Amount"
+  },
+  {
+   "fetch_from": "invoice_no.paid_amount",
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 15:17:44.777878",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "DTFT Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

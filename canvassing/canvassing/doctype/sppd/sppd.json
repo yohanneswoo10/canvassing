@@ -1,0 +1,371 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-13 13:27:12.884874",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a0mq",
+  "title",
+  "naming_series",
+  "date",
+  "kategori_surat",
+  "column_break_qsig",
+  "area_tujuan",
+  "tanggal_berangkat",
+  "tanggal_kembali",
+  "no_bppb",
+  "person_in_charge_section",
+  "nama",
+  "column_break_awog",
+  "jabatan",
+  "column_break_ioug",
+  "cabang__depo",
+  "column_break_hlwx",
+  "department",
+  "perjalanan_tab",
+  "kategori_perjalanan_section",
+  "kategori_perjalanan_dinas",
+  "dukungan_logistik_yg_di_perlukan_section",
+  "kendaraan_kantor",
+  "kendaraan_pribadi",
+  "transportasi_umum",
+  "akomodasi",
+  "column_break_rxcy",
+  "no_pol_kendaraan_kantor",
+  "no_pol_kendaraan_pribadi",
+  "kategori_transportasi",
+  "kategori_akomodasi",
+  "permohonan_uang_tab",
+  "hotel",
+  "bbm",
+  "transportasi_lokal",
+  "column_break_ydng",
+  "tunjangan_luar_kota",
+  "tunjangan_penugasan_sementara",
+  "lain_lain",
+  "total",
+  "realisasi_biaya_tab",
+  "total_biaya_yg_di_berikan",
+  "section_break_jfoz",
+  "hotel_realisasi",
+  "bbm_realisasi",
+  "transport_lokal_realisasi",
+  "column_break_nhca",
+  "tunjangan_realisasi",
+  "tunjangan_sementara_realisasi",
+  "lain_lain_realisasi",
+  "section_break_scwa",
+  "total_realisasi",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a0mq",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "kategori_surat",
+   "fieldtype": "Select",
+   "label": "Kategori Surat",
+   "options": "\nPerjalanan Dinas\nPenugasan Sementara"
+  },
+  {
+   "fieldname": "column_break_qsig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_tujuan",
+   "fieldtype": "Link",
+   "label": "Area Tujuan",
+   "options": "Rute"
+  },
+  {
+   "fieldname": "tanggal_berangkat",
+   "fieldtype": "Date",
+   "label": "Tanggal Berangkat"
+  },
+  {
+   "fieldname": "tanggal_kembali",
+   "fieldtype": "Date",
+   "label": "Tanggal Kembali"
+  },
+  {
+   "fieldname": "no_bppb",
+   "fieldtype": "Link",
+   "label": "No BPPB",
+   "options": "BPPB"
+  },
+  {
+   "fieldname": "person_in_charge_section",
+   "fieldtype": "Section Break",
+   "label": "Person In Charge"
+  },
+  {
+   "fieldname": "nama",
+   "fieldtype": "Link",
+   "label": "Nama",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "column_break_awog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jabatan",
+   "fieldtype": "Select",
+   "label": "Jabatan",
+   "options": "\nSales\nSupervisor\nManager\nAdmin\nFinance"
+  },
+  {
+   "fieldname": "column_break_ioug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cabang__depo",
+   "fieldtype": "Select",
+   "label": "Cabang / Depo",
+   "options": "\nPadang"
+  },
+  {
+   "fieldname": "column_break_hlwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "\nSales\nAdmin\nFinance"
+  },
+  {
+   "fieldname": "perjalanan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Perjalanan"
+  },
+  {
+   "fieldname": "kategori_perjalanan_section",
+   "fieldtype": "Section Break",
+   "label": "Kategori Perjalanan"
+  },
+  {
+   "fieldname": "kategori_perjalanan_dinas",
+   "fieldtype": "Select",
+   "label": "Kategori Perjalanan Dinas",
+   "options": "\nDomestik Dalam Kota\nDomestik Luar Kota (Tidak Menginap)\nDomestik Luar Kota (Menginap)\nDomestik Luar Provinsi\nPenugasan Sementara"
+  },
+  {
+   "fieldname": "dukungan_logistik_yg_di_perlukan_section",
+   "fieldtype": "Section Break",
+   "label": "Dukungan Logistik yg Di Perlukan"
+  },
+  {
+   "default": "0",
+   "fieldname": "kendaraan_kantor",
+   "fieldtype": "Check",
+   "label": "Kendaraan Kantor"
+  },
+  {
+   "default": "0",
+   "fieldname": "kendaraan_pribadi",
+   "fieldtype": "Check",
+   "label": "Kendaraan Pribadi"
+  },
+  {
+   "default": "0",
+   "fieldname": "transportasi_umum",
+   "fieldtype": "Check",
+   "label": "Transportasi Umum"
+  },
+  {
+   "default": "0",
+   "fieldname": "akomodasi",
+   "fieldtype": "Check",
+   "label": "Akomodasi"
+  },
+  {
+   "fieldname": "column_break_rxcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "kendaraan_kantor",
+   "fieldname": "no_pol_kendaraan_kantor",
+   "fieldtype": "Data",
+   "label": "No Pol Kendaraan Kantor"
+  },
+  {
+   "depends_on": "kendaraan_pribadi",
+   "fieldname": "no_pol_kendaraan_pribadi",
+   "fieldtype": "Data",
+   "label": "No Pol Kendaraan Pribadi"
+  },
+  {
+   "depends_on": "transportasi_umum",
+   "fieldname": "kategori_transportasi",
+   "fieldtype": "Select",
+   "label": "Kategori Transportasi",
+   "options": "\nKereta Api\nBus\nTravel\nMotor\nMobil"
+  },
+  {
+   "depends_on": "akomodasi",
+   "fieldname": "kategori_akomodasi",
+   "fieldtype": "Select",
+   "label": "Kategori Akomodasi",
+   "options": "\nHotel\nKost"
+  },
+  {
+   "fieldname": "permohonan_uang_tab",
+   "fieldtype": "Tab Break",
+   "label": "Permohonan Uang"
+  },
+  {
+   "fieldname": "hotel",
+   "fieldtype": "Currency",
+   "label": "Hotel"
+  },
+  {
+   "fieldname": "bbm",
+   "fieldtype": "Currency",
+   "label": "BBM"
+  },
+  {
+   "fieldname": "transportasi_lokal",
+   "fieldtype": "Currency",
+   "label": "Transportasi Lokal"
+  },
+  {
+   "fieldname": "column_break_ydng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tunjangan_luar_kota",
+   "fieldtype": "Currency",
+   "label": "Tunjangan Luar Kota"
+  },
+  {
+   "fieldname": "tunjangan_penugasan_sementara",
+   "fieldtype": "Currency",
+   "label": "Tunjangan Penugasan Sementara"
+  },
+  {
+   "fieldname": "lain_lain",
+   "fieldtype": "Currency",
+   "label": "Lain Lain"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "realisasi_biaya_tab",
+   "fieldtype": "Tab Break",
+   "label": "Realisasi Biaya"
+  },
+  {
+   "fieldname": "total_biaya_yg_di_berikan",
+   "fieldtype": "Currency",
+   "label": "Total Biaya yg Di Berikan"
+  },
+  {
+   "fieldname": "section_break_jfoz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hotel_realisasi",
+   "fieldtype": "Currency",
+   "label": "Hotel"
+  },
+  {
+   "fieldname": "bbm_realisasi",
+   "fieldtype": "Currency",
+   "label": "BBM"
+  },
+  {
+   "fieldname": "transport_lokal_realisasi",
+   "fieldtype": "Currency",
+   "label": "Transportasi Lokal"
+  },
+  {
+   "fieldname": "column_break_nhca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tunjangan_realisasi",
+   "fieldtype": "Currency",
+   "label": "Tunjangan Luar Kota"
+  },
+  {
+   "fieldname": "tunjangan_sementara_realisasi",
+   "fieldtype": "Currency",
+   "label": "Tunjangan Penugasan Sementara"
+  },
+  {
+   "fieldname": "lain_lain_realisasi",
+   "fieldtype": "Currency",
+   "label": "Lain Lain"
+  },
+  {
+   "fieldname": "section_break_scwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_realisasi",
+   "fieldtype": "Currency",
+   "label": "Total Realisasi"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SPPD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-13 13:46:41.989202",
+ "modified_by": "Administrator",
+ "module": "Canvassing",
+ "name": "SPPD",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
