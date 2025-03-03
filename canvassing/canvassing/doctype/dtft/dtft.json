@@ -25,12 +25,14 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Title"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Naming Series"
+   "label": "Naming Series",
+   "options": "DTFT-.YYYY.-"
   },
   {
    "fieldname": "tanggal",
@@ -59,12 +61,14 @@
   {
    "fieldname": "total_faktur",
    "fieldtype": "Int",
-   "label": "Total Faktur"
+   "label": "Total Faktur",
+   "read_only": 1
   },
   {
    "fieldname": "total_nilai_faktur",
    "fieldtype": "Currency",
-   "label": "Total Nilai Faktur"
+   "label": "Total Nilai Faktur",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_eqyk",
@@ -73,7 +77,8 @@
   {
    "fieldname": "total_outstanding_faktur",
    "fieldtype": "Currency",
-   "label": "Total Outstanding Faktur"
+   "label": "Total Outstanding Faktur",
+   "read_only": 1
   },
   {
    "fieldname": "invoices_tab",
@@ -94,7 +99,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-11 15:16:47.150424",
+ "modified": "2025-03-01 12:44:21.392504",
  "modified_by": "Administrator",
  "module": "Canvassing",
  "name": "DTFT",
